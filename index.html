@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Reagan Wokorach</title>
+    <title>Reagan Wokorach | Cybersecurity & Web Development</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cloudflare.com">
 </head>
@@ -11,27 +11,29 @@
 
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">Reagan W.</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <a href="#" class="logo">REAGAN W.</a>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+                <li><a href="#education" onclick="closeMenu()">Education</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#references" onclick="closeMenu()">References</a></li>
             </ul>
-            <div class="hamburger"><i class="fas fa-bars"></i></div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
     <header class="hero" id="about">
         <div class="container hero-content">
             <div class="hero-text">
-                <h1>Hi, I'm <span class="highlight">Reagan Wokorach</span></h1>
-                <h2>Cybersecurity & Web Development Enthusiast</h2>
-                <p>A Diploma in IT student from Cavendish University with a passion for building secure, innovative digital solutions. Skilled in programming, network configuration, and computer maintenance.</p>
+                <h1>I am <span class="highlight">Reagan Wokorach</span></h1>
+                <h2>Cybersecurity & Web Development Professional</h2>
+                <p>A Diploma in IT student from Cavendish University with a passion for Cybersecurity and Web Development. Skilled in Basic Programming, Network Configuration, and Computer Maintenance. Highly motivated to contribute to innovative digital solutions.</p>
                 <div class="hero-btns">
-                    <a href="#contact" class="btn">Contact Me</a>
-                    <a href="https://github.com" target="_blank" class="btn btn-outline">View GitHub</a>
+                    <a href="mailto:wokorachreagan5030@gmail.com" class="btn">Hire Me</a>
+                    <a href="https://github.com" target="_blank" class="btn btn-outline">GitHub Profile</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -45,23 +47,50 @@
             <h2 class="section-title">Work Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
+                    <span class="date">NOV 2020 – DATE</span>
                     <h3>Data Annotator</h3>
-                    <span class="company">Samasource Uganda Limited | Nov 2020 – Present</span>
+                    <span class="company">Samasource Uganda Limited</span>
                     <ul>
-                        <li>Collaborate with quality teams to ensure tasks meet client instructions promptly.</li>
-                        <li>Responsible for high-accuracy data annotations.</li>
-                        <li>Mobilized technical resources to ensure hardware availability for new employees.</li>
+                        <li>Works with quality teams to ensure tasks are completed promptly and effectively according to client instructions.</li>
+                        <li>Responsible for the annotations of tasks as instructed by clients.</li>
+                        <li>Mobilized with trainers to ensure hardware availability and functioning for new employees.</li>
                     </ul>
                 </div>
+
                 <div class="timeline-item">
+                    <span class="date">APRIL 2021 – APRIL 2023</span>
                     <h3>Facilities Manager</h3>
-                    <span class="company">Empowering Ugandans | April 2021 – April 2023</span>
-                    <p>Managed compound maintenance, security protocols, and minor furniture repairs.</p>
+                    <span class="company">Empowering Ugandans</span>
+                    <ul>
+                        <li>Oversees all outside areas of the compound.</li>
+                        <li>Responsible for cleanliness of the vicinity, landscaping, and furniture dusting.</li>
+                        <li>Performs maintenance and minor repairs of furniture.</li>
+                        <li>Provides security by managing entry verification and site safety.</li>
+                    </ul>
                 </div>
+
                 <div class="timeline-item">
+                    <span class="date">APRIL 2020 – NOV 2020</span>
                     <h3>Cashier</h3>
-                    <span class="company">Top-Star Guest House | April 2020 – Nov 2020</span>
-                    <p>Managed payments, resolved customer complaints, and collaborated on sales strategies.</p>
+                    <span class="company">Top-Star Guest House</span>
+                    <ul>
+                        <li>Supervised cleanliness of the working environment to maintain business standards.</li>
+                        <li>Resolved customer complaints and provided accurate service information.</li>
+                        <li>Managed payments, recorded transactions, and reported discrepancies.</li>
+                        <li>Collaborated on new product selling and cross-selling strategies.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="date">JULY 2019 – APRIL 2020</span>
+                    <h3>Receptionist</h3>
+                    <span class="company">Capital Guesthouse</span>
+                    <ul>
+                        <li>Greeted and assisted customers courteously with necessary information.</li>
+                        <li>Ensured a welcoming business environment and maintained site security.</li>
+                        <li>Arranged accommodations and travel for customers.</li>
+                        <li>Managed incoming phone calls and visitor screening.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -70,49 +99,125 @@
     <section id="education" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Education</h2>
-            <div class="edu-item">
-                <h3>Diploma in Information Technology</h3>
-                <p><strong>Cavendish University, Uganda</strong> | May 2024 – Present</p>
-                <p>Focus: Dynamic Web Development, Programming Principles, and Network Management. Collaborated on the "IT-Online-Service" project.</p>
-            </div>
-            <div class="edu-item">
-                <h3>Uganda Advanced Certificate of Education (UACE)</h3>
-                <p><strong>Gulu Army Secondary School</strong> | 2017 – 2018</p>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <span class="date">2024 – DATE</span>
+                    <h3>Diploma in IT</h3>
+                    <p class="school">Cavendish University, Uganda</p>
+                    <p>Focus: Dynamic Web Development, Programming Principles, Database Administration, and Network Management. <strong>Project:</strong> IT-Online-Service.</p>
+                </div>
+                <div class="edu-card">
+                    <span class="date">2017 – 2018</span>
+                    <h3>UACE (A-Level)</h3>
+                    <p class="school">Gulu Army Secondary School</p>
+                    <p>Focus: PMT/GP/IT. Head of Intercession Department & Member of Scripture Union.</p>
+                </div>
+                <div class="edu-card">
+                    <span class="date">2013 – 2016</span>
+                    <h3>UCE (O-Level)</h3>
+                    <p class="school">Gulu Army Secondary School</p>
+                    <p>Head of Mobilising Committee & Member of Scripture Union.</p>
+                </div>
+                <div class="edu-card">
+                    <span class="date">2005 – 2012</span>
+                    <h3>PLE (Primary)</h3>
+                    <p class="school">Patongo Primary School</p>
+                    <p>Active member of the Agriculture and Forestry Club.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card"><i class="fas fa-code"></i> <h4>Web Dev</h4> <p>HTML, CSS, JS, PHP</p></div>
-                <div class="skill-card"><i class="fas fa-shield-alt"></i> <h4>Cybersecurity</h4> <p>Vulnerability Scanning, Pen Testing</p></div>
-                <div class="skill-card"><i class="fas fa-tools"></i> <h4>Tools</h4> <p>Git, Nmap, Wireshark, Burp Suite</p></div>
-                <div class="skill-card"><i class="fas fa-laptop-code"></i> <h4>IT Support</h4> <p>Network Config, Maintenance</p></div>
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h3>Technical</h3>
+                    <div class="skill-tags">
+                        <span>Web Development (HTML, CSS, JS, PHP)</span>
+                        <span>Vulnerability Scanning</span>
+                        <span>Penetration Testing</span>
+                        <span>Network Configuration</span>
+                        <span>Computer Maintenance</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span>GitHub/Git</span>
+                        <span>Nmap</span>
+                        <span>Wireshark</span>
+                        <span>Burp Suite</span>
+                        <span>Labelbox</span>
+                        <span>MS Office (Word, Excel, PPT)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span>Time Management</span>
+                        <span>Analytical Thinking</span>
+                        <span>Problem Solving</span>
+                        <span>Decision-making</span>
+                        <span>Verbal Communication</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section bg-light">
+    <section id="references" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-links">
-                <a href="mailto:wokorachreagan5030@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://linkedin.com" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="tel:+256776815217" class="contact-item"><i class="fas fa-phone"></i> +256 776 815217</a>
+            <h2 class="section-title">References</h2>
+            <div class="ref-grid">
+                <div class="ref-card">
+                    <h4>Pr. Matin Onen</h4>
+                    <p>Gulu Bible Community Church</p>
+                    <p><i class="fas fa-envelope"></i> onenmatin@yahoo.po.uk</p>
+                    <p><i class="fas fa-phone"></i> +256 772 449291</p>
+                </div>
+                <div class="ref-card">
+                    <h4>Jeffery Weinstein</h4>
+                    <p>Empowering Uganda</p>
+                    <p><i class="fas fa-envelope"></i> jeff.trailman@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +256 761 668515</p>
+                </div>
+                <div class="ref-card">
+                    <h4>Joel Acaye</h4>
+                    <p>Samasource Uganda Limited</p>
+                    <p><i class="fas fa-envelope"></i> joel.acaye@glu.samadc.org</p>
+                    <p><i class="fas fa-phone"></i> +256 777 219732</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Reagan Wokorach. Built with passion in Gulu, Uganda.</p>
+        <div class="container">
+            <div class="social-footer">
+                <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2024 Reagan Wokorach | Gulu, Uganda</p>
+        </div>
     </footer>
 
     <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = hamburger.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+        function closeMenu() {
+            navMenu.classList.remove('active');
+            const icon = hamburger.querySelector('i');
+            icon.classList.add('fa-bars');
+            icon.classList.remove('fa-times');
+        }
     </script>
 </body>
 </html>
