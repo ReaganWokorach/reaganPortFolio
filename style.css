@@ -9,8 +9,22 @@
     --bg-light: #f8fbff;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Plus Jakarta Sans', sans-serif; color: var(--text-dark); background: #fff; scroll-behavior: smooth; overflow-x: hidden; }
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    color: var(--text-dark); background: #fff; 
+    scroll-behavior: smooth; overflow-x: hidden;
+    p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: var(--text-light);
+}
+}
 .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 .bg-light { background: var(--bg-light); }
 
