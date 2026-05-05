@@ -76,43 +76,62 @@ footer { padding: 50px 0; text-align: center; border-top: 1px solid #eee; }
 
 /* Mobile Menu */
 @media (max-width: 768px) {
+
+    /* Show hamburger */
     .hamburger {
-        display: block; /* Forces the icon to appear on mobile */
+        display: block;
+    }
+
+    /* Stack nav properly (NO overlay) */
+    .nav-container {
+        flex-wrap: wrap;
     }
 
     .nav-links {
-        display: none; /* Hides the list by default */
-        position: absolute;
-        top: 80px;
-        left: 0;
+        display: none;
         width: 100%;
         background: #fff;
         flex-direction: column;
         text-align: center;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         padding: 20px 0;
+        border-top: 1px solid #eee;
     }
 
-    /* This class is added by JavaScript when you click the icon */
     .nav-links.active {
-        display: flex; /* Shows the menu list only when clicked */
+        display: flex;
     }
 
     .nav-links li {
         margin: 15px 0;
     }
-    .hero-image { 
-        flex: 1; 
+
+    /* HERO FIX: stack content vertically */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
     }
-    .hero-image img { 
-        width: 100%; 
-        max-width: 350px; 
-        border-radius: 20px; 
-        box-shadow: 25px 25px 0 var(--primary); 
-        transition: 0.4s; 
+
+    .hero-text {
+        flex: unset;
     }
-    .hero-image img:hover { 
-        transform: translate(10px, 10px);
-        box-shadow: 10px 10px 0 var(--highlight); 
+
+    .hero-image {
+        flex: unset;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 80%;
+        max-width: 280px;
+        border-radius: 20px;
+        box-shadow: 15px 15px 0 var(--primary);
+        transition: 0.4s;
+    }
+
+    .hero-image img:hover {
+        transform: translate(5px, 5px);
+        box-shadow: 8px 8px 0 var(--highlight);
     }
 }
