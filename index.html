@@ -13,17 +13,19 @@
         <div class="container nav-container">
             <a href="#" class="logo">REAGAN W.</a>
             
+            <!-- The Menu -->
             <ul class="nav-links" id="nav-menu">
-                <li><a href="#about" onclick="closeMenu()">About</a></li>
-                <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
-                <li><a href="#education" onclick="closeMenu()">Education</a></li>
-                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-                <li><a href="#references" onclick="closeMenu()">References</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <button class="hamburger" id="hamburger" aria-label="Menu">
+            <!-- The Hamburger Icon - This MUST be visible -->
+            <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
-            </button>
+            </div>
         </div>
     </nav>
 
@@ -205,23 +207,7 @@
         </div>
     </footer>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('nav-menu');
-        const icon = hamburger.querySelector('i');
-
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            // Toggle between Hamburger and X icon
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-times');
-        });
-
-        function closeMenu() {
-            navMenu.classList.remove('active');
-            icon.classList.add('fa-bars');
-            icon.classList.remove('fa-times');
-        }
-    </script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
