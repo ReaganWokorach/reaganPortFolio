@@ -3,116 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | [Your Name]</title>
+    <title>Portfolio | Reagan Wokorach</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">[Your Name]</a>
+            <a href="#" class="logo">Reagan W.</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero" id="about">
         <div class="container hero-content">
             <div class="hero-text">
-                <h1>Hello, I'm <span class="highlight">[Your Name]</span></h1>
-                <h2>[Your Job Title, e.g., Software Engineer]</h2>
-                <p>[Short professional summary from your resume. Example: A dedicated professional with X years of experience in solving complex problems and building user-centric applications.]</p>
-                <a href="#contact" class="btn">Get in Touch</a>
-                <a href="#" class="btn btn-outline">Download Resume</a>
+                <h1>Hi, I'm <span class="highlight">Reagan Wokorach</span></h1>
+                <h2>Cybersecurity & Web Development Enthusiast</h2>
+                <p>A Diploma in IT student from Cavendish University with a passion for building secure, innovative digital solutions. Skilled in programming, network configuration, and computer maintenance.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn">Contact Me</a>
+                    <a href="https://github.com" target="_blank" class="btn btn-outline">View GitHub</a>
+                </div>
             </div>
             <div class="hero-image">
-                <!-- Ensure your image is named profile.jpg -->
-                <img src="profile.jpg" alt="Profile Photo">
+                <img src="profile.jpg" alt="Reagan Wokorach">
             </div>
         </div>
     </header>
 
-    <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
-            
+            <h2 class="section-title">Work Experience</h2>
             <div class="timeline">
-                <!-- Job 1 -->
                 <div class="timeline-item">
-                    <h3>[Job Title]</h3>
-                    <span class="company">[Company Name] | [Dates]</span>
-                    <p>[Description of your role and achievements. Paste details from your resume here.]</p>
+                    <h3>Data Annotator</h3>
+                    <span class="company">Samasource Uganda Limited | Nov 2020 – Present</span>
+                    <ul>
+                        <li>Collaborate with quality teams to ensure tasks meet client instructions promptly.</li>
+                        <li>Responsible for high-accuracy data annotations.</li>
+                        <li>Mobilized technical resources to ensure hardware availability for new employees.</li>
+                    </ul>
                 </div>
-
-                <!-- Job 2 -->
                 <div class="timeline-item">
-                    <h3>[Previous Job Title]</h3>
-                    <span class="company">[Previous Company] | [Dates]</span>
-                    <p>[Description of your role and achievements.]</p>
+                    <h3>Facilities Manager</h3>
+                    <span class="company">Empowering Ugandans | April 2021 – April 2023</span>
+                    <p>Managed compound maintenance, security protocols, and minor furniture repairs.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Cashier</h3>
+                    <span class="company">Top-Star Guest House | April 2020 – Nov 2020</span>
+                    <p>Managed payments, resolved customer complaints, and collaborated on sales strategies.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section bg-light">
+    <section id="education" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title">Education</h2>
+            <div class="edu-item">
+                <h3>Diploma in Information Technology</h3>
+                <p><strong>Cavendish University, Uganda</strong> | May 2024 – Present</p>
+                <p>Focus: Dynamic Web Development, Programming Principles, and Network Management. Collaborated on the "IT-Online-Service" project.</p>
+            </div>
+            <div class="edu-item">
+                <h3>Uganda Advanced Certificate of Education (UACE)</h3>
+                <p><strong>Gulu Army Secondary School</strong> | 2017 – 2018</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
-                <!-- Add/Remove skills as needed -->
-                <div class="skill-card"><i class="fab fa-html5"></i> HTML5</div>
-                <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS3</div>
-                <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
-                <div class="skill-card"><i class="fab fa-python"></i> Python</div>
-                <div class="skill-card"><i class="fas fa-database"></i> SQL</div>
-                <div class="skill-card"><i class="fas fa-tasks"></i> Project Management</div>
+                <div class="skill-card"><i class="fas fa-code"></i> <h4>Web Dev</h4> <p>HTML, CSS, JS, PHP</p></div>
+                <div class="skill-card"><i class="fas fa-shield-alt"></i> <h4>Cybersecurity</h4> <p>Vulnerability Scanning, Pen Testing</p></div>
+                <div class="skill-card"><i class="fas fa-tools"></i> <h4>Tools</h4> <p>Git, Nmap, Wireshark, Burp Suite</p></div>
+                <div class="skill-card"><i class="fas fa-laptop-code"></i> <h4>IT Support</h4> <p>Network Config, Maintenance</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <p>Interested in working together? Reach out!</p>
+            <h2 class="section-title">Get In Touch</h2>
             <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="contact-item">
-                    <i class="fas fa-envelope"></i> [your.email@example.com]
-                </a>
-                <a href="https://linkedin.com" target="_blank" class="contact-item">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://github.com" target="_blank" class="contact-item">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
+                <a href="mailto:wokorachreagan5030@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="tel:+256776815217" class="contact-item"><i class="fas fa-phone"></i> +256 776 815217</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 [Your Name]. Hosted on GitHub Pages.</p>
+        <p>&copy; 2024 Reagan Wokorach. Built with passion in Gulu, Uganda.</p>
     </footer>
 
-    <!-- Simple JavaScript for Mobile Menu -->
     <script>
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+        hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); });
     </script>
 </body>
 </html>
