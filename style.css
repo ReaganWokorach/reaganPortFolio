@@ -290,6 +290,17 @@ body {
     margin-bottom: 5px; 
 }
 
+/* Add more breathing room inside cards */
+.timeline-item,
+.edu-card,
+.ref-card {
+    line-height: 1.6;
+}
+
+.timeline-item ul li {
+    margin-bottom: 8px;
+}
+
 /* Contact Section */
 .contact-wrapper {
     display: grid;
@@ -436,5 +447,9 @@ footer {
     .hero-image img:hover {
         transform: translate(5px, 5px);
         box-shadow: 8px 8px 0 var(--highlight);
+    }
+
+    .contact-wrapper {
+    grid-template-columns: 1fr;
     }
 }
