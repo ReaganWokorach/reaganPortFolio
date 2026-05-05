@@ -13,19 +13,17 @@
         <div class="container nav-container">
             <a href="#" class="logo">REAGAN W.</a>
             
-            <!-- The Menu -->
             <ul class="nav-links" id="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+                <li><a href="#education" onclick="closeMenu()">Education</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#references" onclick="closeMenu()">References</a></li>
             </ul>
 
-            <!-- The Hamburger Icon - This MUST be visible -->
-            <div class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Menu">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -41,7 +39,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="reagan.jpg" alt="Reagan Wokorach">
+                <img src="profile.jpg" alt="Reagan Wokorach">
             </div>
         </div>
     </header>

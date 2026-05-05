@@ -22,13 +22,7 @@ body { font-family: 'Plus Jakarta Sans', sans-serif; color: var(--text-dark); ba
 .nav-links li { margin-left: 25px; }
 .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 600; transition: 0.3s; }
 .nav-links a:hover { color: var(--highlight); }
-
-.hamburger {
-    display: none; /* Hidden on computers */
-    cursor: pointer;
-    font-size: 1.8rem;
-    color: var(--primary);
-}
+.hamburger { display: none; cursor: pointer; font-size: 1.4rem; color: var(--primary); }
 
 /* Hero */
 .hero { padding: 100px 0; background: radial-gradient(circle at top right, #f0f7ff, #ffffff); }
@@ -75,30 +69,12 @@ footer { padding: 50px 0; text-align: center; border-top: 1px solid #eee; }
 .social-footer a { color: var(--primary); margin: 0 10px; transition: 0.3s; }
 .social-footer a:hover { color: var(--highlight); }
 
+/* Mobile Menu */
 @media (max-width: 768px) {
-    .hamburger {
-        display: block; /* Forces the icon to appear on mobile */
-    }
-
-    .nav-links {
-        display: none; /* Hides the list by default */
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        flex-direction: column;
-        text-align: center;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        padding: 20px 0;
-    }
-
-    /* This class is added by JavaScript when you click the icon */
-    .nav-links.active {
-        display: flex; /* Shows the menu list only when clicked */
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-    }
+    .hamburger { display: block; }
+    .nav-links { position: fixed; top: -100%; left: 0; width: 100%; background: #fff; flex-direction: column; align-items: center; padding: 100px 0 50px 0; transition: 0.5s; z-index: 999; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    .nav-links.active { top: 0; }
+    .nav-links li { margin: 15px 0; }
+    .hero-content { flex-direction: column-reverse; text-align: center; }
+    .hero-text h1 { font-size: 2.5rem; }
 }
