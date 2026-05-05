@@ -9,9 +9,10 @@
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="container">
+ <nav class="navbar">
+        <div class="container nav-container">
             <a href="#" class="logo">REAGAN W.</a>
+            
             <ul class="nav-links" id="nav-menu">
                 <li><a href="#about" onclick="closeMenu()">About</a></li>
                 <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
@@ -19,9 +20,10 @@
                 <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
                 <li><a href="#references" onclick="closeMenu()">References</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -206,15 +208,17 @@
     <script>
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('nav-menu');
+        const icon = hamburger.querySelector('i');
+
         hamburger.addEventListener('click', () => {
             navMenu.classList.toggle('active');
-            const icon = hamburger.querySelector('i');
+            // Toggle between Hamburger and X icon
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-times');
         });
+
         function closeMenu() {
             navMenu.classList.remove('active');
-            const icon = hamburger.querySelector('i');
             icon.classList.add('fa-bars');
             icon.classList.remove('fa-times');
         }
